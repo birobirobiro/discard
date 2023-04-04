@@ -12,6 +12,7 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-png" />
 
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
 </head>
 
 <body>
@@ -21,49 +22,51 @@
   </header>
 
   <div class="container">
-    <div class="search">
-      <form action="">
-        <input type="search" placeholder="Digite seu ID do Discord" />
-        <button>Pesquisar</button>
-      </form>
-    </div>
-
-    <div class="card" data-tilt perspective="1000" scale="1.1" speed="400" max="20" gyroscope="true">
-      <div class="banner"></div>
-
-      <div class="profile">
-        <div class="profile-picture">
-          <img src="https://github.com/birobirobiro.png" alt="" srcset="" />
-        </div>
-
-        <div class="badge">
-          <img src="https://discord.id/img/flags/7.png" alt="" />
-        </div>
+    <div class="card-container">
+      <div class="search">
+        <form action="">
+          <input type="search" placeholder="Digite seu ID do Discord" />
+          <button>Pesquisar</button>
+        </form>
       </div>
 
-      <div class="info">
-        <div>
-          <i class="ph ph-user"></i>
-          User ID:
-          <span id="id">359698226074353665</span>
+      <div class="card" data-tilt>
+        <div class="banner"></div>
+
+        <div class="profile">
+          <div class="profile-picture">
+            <img src="https://github.com/birobirobiro.png" alt="" srcset="" />
+          </div>
+
+          <div class="badge">
+            <img src="https://discord.id/img/flags/7.png" alt="" />
+          </div>
         </div>
 
-        <div>
-          <i class="ph ph-hash"></i>
-          Username:
-          <span id="user">birobirobiro#2945</span>
-        </div>
+        <div class="info">
+          <div>
+            <i class="ph ph-user"></i>
+            User ID:
+            <span id="id">359698226074353665</span>
+          </div>
 
-        <div>
-          <i class="ph ph-asterisk"></i>
-          Created:
-          <span id="account">19/09/2017</span>
-        </div>
+          <div>
+            <i class="ph ph-hash"></i>
+            Username:
+            <span id="user">birobirobiro#2945</span>
+          </div>
 
-        <button>
-          <i class="ph ph-share"></i>
-          Compartilhar
-        </button>
+          <div>
+            <i class="ph ph-asterisk"></i>
+            Created:
+            <span id="account">19/09/2017</span>
+          </div>
+
+          <button>
+            <i class="ph ph-share"></i>
+            <div>Compartilhar</div>
+          </button>
+        </div>
       </div>
     </div>
   </div>

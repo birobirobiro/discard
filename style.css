@@ -34,11 +34,17 @@ body {
   padding: 8rem;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
+  width: 100%;
   background-color: var(--bg-card);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
-  padding: 1rem 4rem;
+  padding: 1rem;
   color: var(--text-color);
   font-size: 1rem;
 }
@@ -119,6 +125,7 @@ a {
 }
 
 .badge {
+  display: flex;
   background-color: var(--bg-card-info);
   padding: 0.8rem;
   border-radius: 8px;
