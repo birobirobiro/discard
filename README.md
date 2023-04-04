@@ -15,7 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🌍 Acesse o site:
 
-- [https://birobirobiro.dev](https://birobirobiro.dev)
+- [https://discard.birobirobiro.dev](https://discard.birobirobiro.dev)
 
 ---
 
