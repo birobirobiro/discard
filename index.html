@@ -12,7 +12,6 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-png" />
 
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
 </head>
 
 <body>
@@ -24,47 +23,49 @@
   <div class="container">
     <div class="card-container">
       <div class="search">
-        <form action="">
-          <input type="search" placeholder="Digite seu ID do Discord" />
-          <button>Pesquisar</button>
+        <form action="" id="user-code">
+          <input type="search" placeholder="Digite seu ID do Discord" name="searchID" />
+          <button type="submit">Pesquisar</button>
         </form>
       </div>
 
-      <div class="card" data-tilt>
-        <div class="banner"></div>
+      <div id="card" class="card" data-tilt>
+        <div id="banner" class="banner"></div>
 
         <div class="profile">
           <div class="profile-picture">
-            <img src="https://github.com/birobirobiro.png" alt="" srcset="" />
+            <img src="https://github.com/birobirobiro.png" alt="" srcset="" id="avatar" referrerpolicy="no-referrer" />
           </div>
 
-          <div class="badge">
-            <img src="https://discord.id/img/flags/7.png" alt="" />
+          <div class="badge-default">
+            <div class="badge">
+              <img src="./assets/badges/hypesquadbrilliance.svg" alt="" referrerpolicy="no-referrer" />
+            </div>
           </div>
         </div>
 
-        <div class="info">
-          <div>
+        <div class="info-container">
+          <div class="info">
             <i class="ph ph-user"></i>
-            User ID:
+            ID:
             <span id="id">359698226074353665</span>
           </div>
 
-          <div>
+          <div class="info">
             <i class="ph ph-hash"></i>
-            Username:
+            Usuário:
             <span id="user">birobirobiro#2945</span>
           </div>
 
-          <div>
+          <div class="info">
             <i class="ph ph-asterisk"></i>
-            Created:
+            Criado em:
             <span id="account">19/09/2017</span>
           </div>
 
-          <button>
-            <i class="ph ph-share"></i>
-            <div>Compartilhar</div>
+          <button id="image-button">
+            <i class="ph-light ph-image"></i>
+            Copiar Card
           </button>
         </div>
       </div>
@@ -76,6 +77,8 @@
   </footer>
 
   <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript" src="./html2canvas.js"></script>
+  <script src="./main.js" type="module"></script>
 </body>
 
 </html>
