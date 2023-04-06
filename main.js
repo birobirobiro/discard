@@ -46,24 +46,6 @@ function getBadgeSrc(flag) {
   return badgeUrls[flag] || null;
 }
 
-button.addEventListener("click", copiarCard);
-
-function copiarCard() {
-  var card = document.getElementById("card");
-  html2canvas(card)
-    .then(function (canvas) {
-      canvas.toBlob(function (blob) {
-        navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
-          .then(function () {
-            console.log("Conteúdo copiado como imagem com sucesso!");
-          })
-          .catch(function (error) {
-            console.error("Erro ao copiar conteúdo como imagem: ", error);
-          });
-      });
-    });
-}
-
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchValue = searchInput.value;
@@ -98,12 +80,10 @@ searchForm.addEventListener("submit", (e) => {
       badge.innerHTML = data.badges.reduce((acc, flag) => {
         const badgeSrc = getBadgeSrc(flag);
         return `${acc} 
-        <div class="badge">
-          <img src="${badgeSrc}" alt="${flag}">
-        </div>`;
+      <div class="badge">
+        <img src="${badgeSrc}" alt="${flag}">
+      </div>`;
       }, "");
-
-
     })
     .catch((error) => {
       console.log(error);
